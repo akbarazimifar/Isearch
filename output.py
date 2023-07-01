@@ -6,7 +6,6 @@ from lib.api import api_instagram
 from lib.requests import *
 from lib.banner import b1
 from lib.colors import *
-from lib.session_loader import launch
 from lib.phone.phonelookup import *
 from lib.emails_gen import gen
 import json
@@ -14,11 +13,8 @@ import json
 
 async def output(username: str):
     print(b1)
-    sessionsId = await launch()
 
-    cookies = {'sessionid': sessionsId}
-    headers = {'User-Agent': 'Instagram 64.0.0.14.96'}
-    r = Requests(api_instagram(username), headers=headers, cookies=cookies)
+    r = Requests(api_instagram(username))
 
     result = await r.sender()
 
@@ -112,11 +108,8 @@ async def output(username: str):
 
 async def downloader(username: str):
     print(b1)
-    sessionsId = await launch()
 
-    cookies = {'sessionid': sessionsId}
-    headers = {'User-Agent': 'Instagram 64.0.0.14.96'}
-    r = await Requests(api_instagram(username), headers=headers, cookies=cookies).sender()
+    r = await Requests(api_instagram(username)).sender()
 
     data = json.loads(r.text)
 
