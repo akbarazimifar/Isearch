@@ -67,16 +67,6 @@ option:
     -d, --download      download the profile picture of the target
 ```
 
-**For the proper functioning of the script it will be necessary to deposit your session id in the data.json**
-
-![id](https://github.com/N0rz3/N0rz3/assets/123885505/68df7a56-82b7-4454-85dd-ffc504b33fca)
-
-```json
-{
-    "sessionID": "YOUR_SESSION_ID"
-}
-```
-
 **📚 Example input:**
 
 ```python isearch.py instagram```
