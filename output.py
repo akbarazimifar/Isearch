@@ -44,9 +44,9 @@ async def output(username: str):
             publication = f"[+] Number of publication => {data['graphql']['user']['edge_owner_to_timeline_media']['count']}"
 
             if data['graphql']['user']['is_private'] == True:
-                private = f"{GREEN}[+] 🔒 Account is private!{WHITE}"
+                private = f"{RED}[+] 🔒 Account is private!{WHITE}"
             else:
-                private = f"[+] 🔓 Account is public!{WHITE}"
+                private = f"{GREEN}[+] 🔓 Account is public!{WHITE}"
 
             if data['graphql']['user']['is_business_account'] == True:
                 buisness = f"{GREEN}[+] 👨🏻‍💼 Buisness Account!{WHITE}"
