@@ -1,4 +1,4 @@
-![Isearch](https://github.com/N0rz3/Zehef/assets/123885505/0811f735-fe52-4bb6-8173-cbb6ca803a7f)
+![logo](https://github.com/N0rz3/Isearch/assets/123885505/460a9ddf-9222-4e50-a627-3d0cfa0a7b58)
 
 [![python version](https://img.shields.io/badge/Python-3.10%2B-brightgreen)](https://www.python.org/downloads/)
 [![license](https://img.shields.io/badge/License-GNU-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.fr.html)
