@@ -53,7 +53,7 @@ async def output(username: str):
             else:
                 buisness = f"[-] 🐌 No Buisness Account!{WHITE}"
             
-            if data['graphql']['user']['is_verified'] != None:
+            if data['graphql']['user']['is_verified'] != False:
                 verified = f"{GREEN}[+] ☑ Account is verified!{WHITE}"
             else:
                 verified = f"[-] ☒ Account is not verified!{WHITE}"
