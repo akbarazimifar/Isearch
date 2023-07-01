@@ -7,7 +7,7 @@ async def launch():
         data = json.load(file)
         session_id = data['sessionID']
 
-        if session_id == "" or "YOUR_SESSION_ID":
+        if session_id == "":
             print("[-] Please enter your session ID in the data.json file.")
             exit()
 
