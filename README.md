@@ -73,7 +73,8 @@ option:
 
 **📚 Example output:**
 
-![output](https://github.com/N0rz3/N0rz3/assets/123885505/39b80b17-baf3-4a44-90de-4a9a168843ea)
+![output](https://github.com/N0rz3/Isearch/assets/123885505/da5d9be7-f782-47d6-a581-acb8d4db49e2)
+
 
 
 
