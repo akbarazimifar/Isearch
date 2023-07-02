@@ -8,6 +8,7 @@ from lib.banner import b1
 from lib.colors import *
 from lib.phone.phonelookup import *
 from lib.emails_gen import gen
+from lib.eyes import *
 import json
 
 
@@ -25,7 +26,7 @@ async def output(username: str):
             id = f"[+] ID => {data['logging_page_id'].strip('profilePage_')}"
             
             if data['graphql']['user']['username'] != "":
-                name = f"[+] Username => {data['graphql']['user']['username']}"
+                name = f"[+] Current name => {data['graphql']['user']['username']}"
             else:
                 name = "[-] Name not found."
             if data['graphql']['user']['full_name'] != "":
@@ -74,6 +75,7 @@ async def output(username: str):
                 external = f"[-] 👋 No external url."
 
 
+
             print("✍️  Profile:\n")
             print(id)
             print(name)
@@ -93,6 +95,9 @@ async def output(username: str):
             print(publication)
             print("\n🖼️  Picture:")
             print("=>" + data['graphql']['user']['profile_pic_url'])
+
+            print("\n🎭 Identity masked:")
+            await Eyes(data).matcher()
 
             print("\n📮 Potentials emails:\n")
             await gen(data['graphql']['user']['username'], data['graphql']['user']['business_email'])
