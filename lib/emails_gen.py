@@ -8,7 +8,6 @@ async def gen(username: str, email: str):
     def variations():
 
 
-        upp = username.upper() + "@" + random.choice(email_domains)
         low = username.lower() + "@" + random.choice(email_domains)
         num = (
             username.replace("1", "i")
@@ -42,13 +41,6 @@ async def gen(username: str, email: str):
             .replace("0", "") + "@" + random.choice(email_domains)
         )
 
-        ett = (
-            username.upper().replace("I", "1")
-            .replace("E", "3")
-            .replace("A", "4")
-            .replace("B", "8")
-            .replace("O", "0") + "@" + random.choice(email_domains)
-        )
 
         dedede = username + "$$" + "@" + random.choice(email_domains)
 
@@ -56,7 +48,7 @@ async def gen(username: str, email: str):
 
         off = username + ".off" + "@" + random.choice(email_domains) 
 
-        return upp, low, num, lett, a, no_num, ett, r, dedede, off
+        return low, num, lett, a, no_num, r, dedede, off
 
     var = variations()
 
