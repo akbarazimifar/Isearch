@@ -69,11 +69,63 @@ option:
 
 **📚 Example input:**
 
-```python isearch.py instagram```
+```python isearch.py arianagrande```
 
 **📚 Example output:**
 
-![output](https://github.com/N0rz3/Isearch/assets/123885505/da5d9be7-f782-47d6-a581-acb8d4db49e2)
+```
+ ___           ___         _   
+|_  |  ___ ___| | |___ ___| |_
+ _| |_|_ -| -_|_  |  _|  _|   |
+|_____|___|___| |_|_| |___|_|_|   (BY 🦊 @N0rz3)
+
+    📸 Instagram search
+
+🐦 Twitter: @norze15
+☕ Donations: https://www.buymeacoffee.com/norze
+
+✍️  Profile:
+
+[+] ID => 7719696
+[+] Current name => arianagrande
+[+] Fullname => Ariana Grande
+[+] 👋 External url => http://rembeauty.com/
+[+] Bio => currently somewhere over the rainbow
+
+🦉 Account:
+
+[+] 🔓 Account is public!
+[-] 🐌 No Buisness Account!
+[+] ☑ Account is verified!
+
+[-] 📫 No public email.
+[-] 📞 No public phone number.
+
+🛥️  Community:
+
+[+] Followers => 376410455
+[+] Following => 600
+[+] Number of publication => 126
+
+🖼️  Picture:
+=>https://scontent-fra3-2.cdninstagram.com/v/t51.2885-19/340830534_932180087934550_8966124175413162437_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent-fra3-2.cdninstagram.com&_nc_cat=1&_nc_ohc=pVl8105YNPEAX_zQJE4&edm=AKEQFekBAAAA&ccb=7-5&oh=00_AfB5ZNUF2jE-A3FPRATYu4iqKiRC0YARtM1q6zMQvkxKjg&oe=64A78F2F&_nc_sid=29ddf3
+
+🎭 Identity masked:
+
+[+] 1 Account found -> @r.e.m.beauty
+
+📮 Potentials emails:
+
+[+] arianagrande@tutanota.com                    
+[+] arianagrande@fastmail.com
+[+] 4r14n4gr4nd3@aol.com
+[+] arianagrande@fastmail.com [Already shown]
+[+] arianagrande@tutanota.com [Already shown]
+[+] arianagrande0@hotmail.com
+[+] arianagrande$$@github.com
+[+] arianagrande.off@icloud.com
+```
+
 
 
 
