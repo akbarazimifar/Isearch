@@ -26,7 +26,7 @@ class Eyes:
                     usernames.append(username)
 
         except (KeyError, json.JSONDecodeError):
-            print("[-] The account has no post.")
+            print("[-] The account has not post.")
 
         return usernames
 
