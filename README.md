@@ -30,6 +30,7 @@ Isearch or rather Instagram search is a tool that retrieves information on an in
  - verified account
  - public phone number (+lookup)
  - public email
+ - related profile
  - potentiels emails
  - download of profile picture
 
