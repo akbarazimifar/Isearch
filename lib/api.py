@@ -1,7 +1,7 @@
-URL_MAIN = "https://www.instagram.com/"
+BASE_URL = "https://www.instagram.com/"
 
 def api_instagram(username: str):
 
-    api = f"{URL_MAIN}{username}/?__a=1&__d=dis"
+    api = f"{BASE_URL}{username}/?__a=1&__d=dis"
 
     return api
