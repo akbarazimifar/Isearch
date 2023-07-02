@@ -4,9 +4,10 @@ b1 = f"""{all}
  ___           ___         _   
 |_  |  ___ ___| | |___ ___| |_ 
  _| |_|_ -| -_|_  |  _|  _|   |
-|_____|___|___| |_|_| |___|_|_|   {YELLOW}📸 Instagram search {BLUE}(BY 🦊 @N0rz3)
-                               
-       {WHITE}   
+|_____|___|___| |_|_| |___|_|_|   {BLUE}(BY 🦊 @N0rz3)
+
+    {YELLOW}📸 Instagram search 
+       {WHITE}
 🐦 Twitter: @norze15
 ☕ Donations: https://www.buymeacoffee.com/norze
 """
