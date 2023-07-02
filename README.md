@@ -9,7 +9,7 @@
 
 # **😇 Abouts Isearch**
 
-Isearch or rather Instagram search is a tool that retrieves information on an instagram profile (only public)
+Isearch or rather Instagram search is a tool that retrieves information on an instagram profile (only public to all)
 
 **Features of script**
  - fully async
