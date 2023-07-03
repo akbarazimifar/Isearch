@@ -37,7 +37,7 @@ class Eyes:
         target_username = self.data['graphql']['user']['username']
 
         try:
-            TempPrint("\n[EYES] 🎭 Search of possible secondary accounts...", temp=3).TPrint()
+            TempPrint("\n[EYES] 🎭 Search for accounts that have participated in a publication...", temp=3).TPrint()
             for name in extracted_usernames:
                 if name.lower() != target_username.lower():
                     count += 1
