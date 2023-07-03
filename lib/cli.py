@@ -26,6 +26,20 @@ async def parser():
         default=None,
         help="download the profile picture of the target"
     )
+    parser.add_argument(
+        "-t", "--tagged",
+        nargs="?",
+        type=str,
+        default=None,
+        help="displays all profiles that have been tagged by the target"
+    )
+    parser.add_argument(
+        "-f", "--follows",
+        nargs="?",
+        type=str,
+        default=None,
+        help="shows the number of followers and following"
+    )
 
     args = parser.parse_args()
 
@@ -37,6 +51,16 @@ async def parser():
     elif args.download:
             username = args.download
             await downloader(username)
+            exit()
+
+    elif args.tagged:
+            username = args.tagged
+            await tagged(username)
+            exit()
+
+    elif args.follows:
+            username = args.follows
+            await follows(username)
             exit()
 
     else:
