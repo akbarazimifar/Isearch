@@ -60,7 +60,7 @@ pip install -r requirements.txt
 🐦 Twitter: @norze15
 ☕ Donations: https://www.buymeacoffee.com/norze
 
-usage: isearch.py [-h] [-d] [-t] [-f] <username>
+usage: isearch.py [-h] [-d] [-t] [-f] <username> [-c]
 
 option:
     -h, --help          show this help message and exit
