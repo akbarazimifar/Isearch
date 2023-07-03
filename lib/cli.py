@@ -1,6 +1,7 @@
 import argparse
 from output import *
 from lib.banner import b2
+from lib.session_loader import checker
 
 
 async def parser():
@@ -40,6 +41,12 @@ async def parser():
         default=None,
         help="shows the number of followers and following"
     )
+    parser.add_argument(
+        "-c", "--checker",
+        action='store_true',
+        help="checks if you have correctly submitted your session ID"
+    )
+
 
     args = parser.parse_args()
 
@@ -61,6 +68,10 @@ async def parser():
     elif args.follows:
             username = args.follows
             await follows(username)
+            exit()
+
+    elif args.checker:
+            await checker()
             exit()
 
     else:
