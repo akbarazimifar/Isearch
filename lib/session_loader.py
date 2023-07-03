@@ -33,11 +33,11 @@ async def checker():
 
         sessionID = read['sessionID']
 
-    if sessionID != "YOUR_SESSION_ID":
-        print(GREEN + "[+] Session ID found! You can use the whole tool." + WHITE)
+    if sessionID == "YOUR_SESSION_ID":
+        print(RED + "[-] Session ID not found, drop it in the data.json file." + WHITE)
 
-    elif sessionID != "":
-        print(GREEN + "[+] Session ID found! You can use the whole tool." + WHITE)
+    elif sessionID == "":
+        print(RED + "[-] Session ID not found, drop it in the data.json file." + WHITE)
 
     else:
-        print(RED + "[-] Session ID not found, drop it in the data.json file." + WHITE)
+        print(GREEN + "[+] Session ID found! You can use the whole tool." + WHITE)
