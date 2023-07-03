@@ -1,6 +1,6 @@
 from lib.colors import *
 
-b1 = f"""{all}                             
+b1 = f"""{WHITE}                             
  ___           ___         _   
 |_  |  ___ ___| | |___ ___| |_ 
  _| |_|_ -| -_|_  |  _|  _|   |
@@ -12,7 +12,7 @@ b1 = f"""{all}
 ☕ Donations: https://www.buymeacoffee.com/norze
 """
 
-b2 = f"""{all}                             
+b2 = f"""{WHITE}                             
  ___           ___         _   
 |_  |  ___ ___| | |___ ___| |_ 
  _| |_|_ -| -_|_  |  _|  _|   |
