@@ -41,7 +41,7 @@ class Eyes:
             for name in extracted_usernames:
                 if name.lower() != target_username.lower():
                     count += 1
-                    print(f"{GREEN}[+] {count} Account{'s' if count > 1 else ''} found -> @{name}{WHITE}")
+                    print(f"{GREEN}[+] {count} Account{'s' if count > 1 else ''} found having participated in a publication-> @{name}{WHITE}")
 
             if count == 0:
                 print(f"[-] Eyes could not find a secondary account.")
