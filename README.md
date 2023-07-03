@@ -79,6 +79,9 @@ option:
 }
 ```
 
+To verify that you can run the tool without problems enter this command:
+
+`python isearch.py --checker`
 
 **📚 Example input:**
 
