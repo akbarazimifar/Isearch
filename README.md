@@ -64,6 +64,7 @@ usage: isearch.py [-h] [-d] [-t] [-f] <username>
 
 option:
     -h, --help          show this help message and exit
+    -c, --checker       checks if you have correctly submitted your session ID   
     -d, --download      download the profile picture of the target
     -t, --tagged        displays all profiles that have been tagged by the target
     -f, --follows       shows the number of followers and following
