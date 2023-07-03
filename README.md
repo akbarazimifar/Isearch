@@ -82,7 +82,7 @@ option:
 
 **📚 Example input:**
 
-```python isearch.py instagram```
+```python isearch.py arianagrande```
 
 **📚 Example output:**
 ```
