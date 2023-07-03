@@ -11,4 +11,4 @@ class TempPrint:
     def TPrint(self):
         print(self.msg, end="", flush=True)
         time.sleep(self.temp)
-        print("\r" + " " * len(self.msg) + "\r", end="", flush=True)
+        print("\r" + " " * (len(self.msg) + 1) + "\r", end="", flush=True)
