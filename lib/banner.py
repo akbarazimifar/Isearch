@@ -23,7 +23,7 @@ b2 = f"""{all}
 🐦 Twitter: @norze15
 ☕ Donations: https://www.buymeacoffee.com/norze
 
-usage: isearch.py [-h] [-d] [-t] [-f] <username>
+usage: isearch.py [-d] [-t] [-f] <username> [-c] [-h]
 
 option:
     -h, --help          show this help message and exit
