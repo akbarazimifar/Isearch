@@ -44,7 +44,7 @@ class Eyes:
                     print(f"{GREEN}[+] {count} Account{'s' if count > 1 else ''} found having participated in a publication-> @{name}{WHITE}")
 
             if count == 0:
-                print(f"[-] Eyes could not find a secondary account.")
+                print(f"[-] Eyes could not find any accounts that participated in a post.")
 
         except Exception as ex:
             print(ex)
