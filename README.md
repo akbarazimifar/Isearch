@@ -33,6 +33,7 @@ Isearch or rather Instagram search is a tool that retrieves information on an in
  - related profile
  - potentiels emails
  - download of profile picture
+ - all users tagged
 
 
 ## **🛠️ Requirements / Launch**
@@ -44,8 +45,6 @@ git clone https://github.com/N0rz3/Isearch.git
 cd Isearch
 pip install -r requirements.txt
 ```
-
-
 
 
 ### **😲 Usage**
@@ -61,19 +60,31 @@ pip install -r requirements.txt
 🐦 Twitter: @norze15
 ☕ Donations: https://www.buymeacoffee.com/norze
 
-usage: isearch.py [-h] [-d] <username>
+usage: isearch.py [-h] [-d] [-t] [-f] <username>
 
 option:
     -h, --help          show this help message and exit
     -d, --download      download the profile picture of the target
+    -t, --tagged        displays all profiles that have been tagged by the target
+    -f, --follows       shows the number of followers and following
 ```
+
+**For the proper functioning of the script it will be necessary to deposit your session id in the data.json**
+
+![id](https://github.com/N0rz3/N0rz3/assets/123885505/68df7a56-82b7-4454-85dd-ffc504b33fca)
+
+```json
+{
+    "sessionID": "YOUR_SESSION_ID"
+}
+```
+
 
 **📚 Example input:**
 
-```python isearch.py arianagrande```
+```python isearch.py instagram```
 
 **📚 Example output:**
-
 ```
  ___           ___         _   
 |_  |  ___ ___| | |___ ___| |_
@@ -126,8 +137,6 @@ option:
 [+] arianagrande$$@github.com
 [+] arianagrande.off@icloud.com
 ```
-
-
 
 
 
