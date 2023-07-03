@@ -29,18 +29,24 @@ class Finder:
         founds = 0
         users = await self.extract_users()
 
+        already_shown = []
+
         print()
         TempPrint("-> 🐅 Scraping of all tagged profiles...").TPrint()
         try:
             for user in users:
-                founds += 1
-                r = await Requests(api_instagram(user), headers=self.headers, cookies=self.cookies).sender()
-                data = json.loads(r.text)
+                if user in already_shown:
+                    continue
+                else:
+                    founds += 1
+                    r = await Requests(api_instagram(user), headers=self.headers, cookies=self.cookies).sender()
+                    data = json.loads(r.text)
 
-                user_id = data['logging_page_id'].strip('profilePage_')
+                    user_id = data['logging_page_id'].strip('profilePage_')
 
 
-                print(f"\r- Name: @{user}\n   ╚═════ID : {user_id}\n")
+                    print(f"\r- Name: @{user}\n   ╚═════ID : {user_id}\n")
+                    already_shown.append(user)
 
             if founds == 0:
                 print("[-] The target has not tagged a profile.")
