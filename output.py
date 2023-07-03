@@ -9,13 +9,20 @@ from lib.colors import *
 from lib.phone.phonelookup import *
 from lib.emails_gen import gen
 from lib.eyes import *
+from lib.all_user_taged import *
+from lib.session_loader import launch
 import json
 
 
 async def output(username: str):
     print(b1)
 
-    r = Requests(api_instagram(username))
+    sessionID = await launch()
+
+    headers = {'User-Agent': 'Instagram 64.0.0.14.96'}
+    cookies = {'sessionid': sessionID}
+
+    r = Requests(api_instagram(username), headers, cookies)
 
     result = await r.sender()
 
@@ -107,6 +114,7 @@ async def output(username: str):
 
         except (json.JSONDecodeError, KeyError):
             print("[-] Failed to parse response JSON.")
+            pass
 
     else:
         print("[-] Non-existent account.")
@@ -114,7 +122,12 @@ async def output(username: str):
 async def downloader(username: str):
     print(b1)
 
-    r = await Requests(api_instagram(username)).sender()
+    sessionID = await launch()
+
+    headers = {'User-Agent': 'Instagram 64.0.0.14.96'}
+    cookies = {'sessionid': sessionID}
+
+    r = await Requests(api_instagram(username), headers, cookies).sender()
 
     data = json.loads(r.text)
 
@@ -123,3 +136,37 @@ async def downloader(username: str):
     with open(f"img/profile_pic_{username}.jpg", "wb") as jpgfile:
         jpgfile.write(pic.content)
         print(GREEN+"[+] Picture of profile is telecharged!"+WHITE)
+
+async def tagged(username: str):
+    print(b1)
+
+    sessionID = await launch()
+
+    headers = {'User-Agent': 'Instagram 64.0.0.14.96'}
+    cookies = {'sessionid': sessionID}
+
+    r = await Requests(api_instagram(username), headers, cookies).sender()
+
+    data = json.loads(r.text)
+
+    print(f"[+] Users tagged by {username}:")
+    await Finder(data, headers, cookies).account_to_id()
+
+
+async def follows(username: str):
+    print(b1)
+
+    sessionID = await launch()
+
+    headers = {'User-Agent': 'Instagram 64.0.0.14.96'}
+    cookies = {'sessionid': sessionID}
+
+    r = await Requests(api_instagram(username), headers, cookies).sender()
+
+    data = json.loads(r.text)
+
+    followers = f"[+] Followers => {data['graphql']['user']['edge_followed_by']['count']}"
+    following = f"[+] Following => {data['graphql']['user']['edge_follow']['count']}"
+
+    print(followers)
+    print(following)
