@@ -32,7 +32,7 @@ Isearch or rather Instagram search is a tool that retrieves information on an in
  - public email
  - related profile
  - potentiels emails
- - download of profile picture
+ - download of profile picture (in the folder img)
  - all users tagged
 
 
