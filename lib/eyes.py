@@ -1,5 +1,4 @@
 from lib.colors import *
-from lib.requests import *
 from lib.objects import TempPrint
 import json
 
@@ -26,7 +25,7 @@ class Eyes:
                     usernames.append(username)
 
         except (KeyError, json.JSONDecodeError):
-            print("[-] Error.")
+            print("[-] The account has no post.")
 
         return usernames
 
@@ -42,7 +41,7 @@ class Eyes:
             for name in extracted_usernames:
                 if name.lower() != target_username.lower():
                     count += 1
-                    print(f"{GREEN}[+] {count} Account found -> @{name}{WHITE}")
+                    print(f"{GREEN}[+] {count} Account{'s' if count > 1 else ''} found -> @{name}{WHITE}")
 
             if count == 0:
                 print(f"[-] Eyes could not find a secondary account.")
