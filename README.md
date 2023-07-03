@@ -124,7 +124,7 @@ option:
 
 🎭 Identity masked:
 
-[+] 1 Account found -> @r.e.m.beauty
+[+] 1 Account found having participated in a publication -> @r.e.m.beauty
 
 📮 Potentials emails:
 
