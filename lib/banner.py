@@ -23,9 +23,11 @@ b2 = f"""{all}
 🐦 Twitter: @norze15
 ☕ Donations: https://www.buymeacoffee.com/norze
 
-usage: isearch.py [-h] [-d] <username>
+usage: isearch.py [-h] [-d] [-t] [-f] <username>
 
 option:
     -h, --help          show this help message and exit
     -d, --download      download the profile picture of the target
+    -t, --tagged        displays all profiles that have been tagged by the target
+    -f, --follows       shows the number of followers and following
 """
